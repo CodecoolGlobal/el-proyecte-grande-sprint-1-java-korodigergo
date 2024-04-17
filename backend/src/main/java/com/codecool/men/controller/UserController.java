@@ -23,12 +23,12 @@ public class UserController {
   }
 
   @GetMapping("/edit/{userId}")
-  public User editUser(@PathVariable UUID userID, @RequestBody User user) {
+  public User editUser(@PathVariable int userID, @RequestBody User user) {
     throw new RuntimeException();
   }
 
   @DeleteMapping("/delete/{userId}")
-  public void delete(@PathVariable UUID userId) {
+  public void delete(@PathVariable int userId) {
     userService.deleteUser(userId);
   }
 

@@ -19,16 +19,23 @@ public class UserService {
   }
 
   public UserIDDTO loginUser(UserOperationsDTO userOperationsDTO) {
-      Optional<User> user = Optional.ofNullable(userDAO.getUserByName(userOperationsDTO.name()));
-      boolean userNameCheck = false;
-      boolean passwordCheck = false;
-      if(user.isEmpty()){
-        return new UserIDDTO(null, true, false);
+     // Optional<User> user = Optional.ofNullable(userDAO.getUserByName(userOperationsDTO.name()));
+//      boolean userNameCheck = false;
+//      boolean passwordCheck = false;
+//      if(user.isEmpty()){
+//        return new UserIDDTO(null, true, false);
+//      }
+//      if(Objects.equals(user.get().getPassword(), userOperationsDTO.password())){
+//        passwordCheck = true;
+//      }
+//      return new UserIDDTO(user.get().getUserId(), passwordCheck, userNameCheck);
+      User user = userDAO.getUserByName(userOperationsDTO.name());
+      if (user != null){
+          if (Objects.equals(user.getPassword(), userOperationsDTO.password())){
+              return new UserIDDTO(user.getUserId());
+          }
       }
-      if(Objects.equals(user.get().getPassword(), userOperationsDTO.password())){
-        passwordCheck = true;
-      }
-      return new UserIDDTO(user.get().getUserId(), passwordCheck, userNameCheck);
+      return null;
 
   }
 
@@ -36,7 +43,7 @@ public class UserService {
     throw new RuntimeException();
   }
 
-  public void deleteUser(UUID userId) {
+  public void deleteUser(int userId) {
     userDAO.deleteUser(userId);
   }
 

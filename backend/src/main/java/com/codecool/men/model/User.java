@@ -1,19 +1,21 @@
 package com.codecool.men.model;
 
 import java.util.UUID;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class User {
-  private final UUID userId;
+  private final int userId;
+  private static final AtomicInteger count = new AtomicInteger(0);
   private String username;
   private String password;
 
   public User(String username, String password) {
-    this.userId = UUID.randomUUID();
+    this.userId = count.incrementAndGet();
     this.username = username;
     this.password = password;
   }
 
-  public UUID getUserId() {
+  public int getUserId() {
     return userId;
   }
 

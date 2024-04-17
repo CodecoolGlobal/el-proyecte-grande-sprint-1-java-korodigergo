@@ -7,6 +7,6 @@ import java.util.UUID;
 
 public interface UserDAO {
   User getUserByName(String name);
-  void deleteUser(UUID userId);
+  void deleteUser(int userId);
   void addUser(UserOperationsDTO userOperationsDTO);
 }

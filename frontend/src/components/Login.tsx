@@ -5,15 +5,16 @@ export default function Login() {
   const [name, setUsername] = useState('');
   const [password, setUserPassword] = useState('');
   const [userId, setUserId] = useState(-1);
-
+  console.log("1. " + userId);
   const navigate = useNavigate();
 
   useEffect(() => {
     const id = JSON.parse(localStorage.getItem('userId')!);
     if (id > 0) {
       setUserId(id);
+      console.log("2. " + userId);
     }
-  }, [handleSubmit]);
+  }, []);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -37,10 +38,13 @@ export default function Login() {
         const responseUser = await response.json();
         console.log( JSON.stringify(responseUser))
         localStorage.setItem('userId', JSON.stringify(responseUser.userID));
-        navigate('/');
+        setUserId(responseUser.userID);
+        console.log("3." + userId);
+        
+
         
       } else {
-        console.error('Failed to add the user');
+        console.error('Failed to login');
       }
     } catch (error) {
       console.error(error);
@@ -53,7 +57,7 @@ export default function Login() {
     localStorage.clear();
   }
 
-  return userId > 0 ? (
+  return userId != -1  ? (
     <form className="form" onSubmit={(e) => handleLogout(e)}>
       <h4>You are logged in! </h4>
       <button type="submit" className="btn">
@@ -76,6 +80,7 @@ export default function Login() {
             onChange={(e) => setUsername(e.target.value)}
             value={name}
             placeholder="Username"
+            autoComplete="username"
             required
           />
         </div>
@@ -88,6 +93,7 @@ export default function Login() {
             onChange={(e) => setUserPassword(e.target.value)}
             value={password}
             placeholder="Password"
+            autoComplete="current-password"
           />
         </div>
         <button type="submit" className="btn">

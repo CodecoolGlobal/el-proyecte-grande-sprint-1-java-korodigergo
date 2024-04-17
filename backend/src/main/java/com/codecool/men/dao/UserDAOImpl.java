@@ -22,8 +22,8 @@ public class UserDAOImpl implements UserDAO{
   }
 
   @Override
-  public void deleteUser(UUID userId) {
-    User toBeDeleted = users.stream().filter(user -> user.getUserId().equals(userId)).toList().getFirst();
+  public void deleteUser(int userId) {
+    User toBeDeleted = users.stream().filter(user -> user.getUserId() == userId).toList().getFirst();
     users.remove(toBeDeleted);
   }
 
