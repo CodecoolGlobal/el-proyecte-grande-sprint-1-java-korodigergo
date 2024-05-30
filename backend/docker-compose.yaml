@@ -12,6 +12,8 @@ services:
       - "15432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    networks:
+      - app-network
 
   app:
     image: 'notes-backend'
@@ -27,6 +29,22 @@ services:
       SPRING_DATASOURCE_USERNAME: ${DB_USERNAME}
       SPRING_DATASOURCE_PASSWORD: ${DB_PASSWORD}
       SECRET_KEY: ${SECRET_KEY}
+    networks:
+      - app-network
+
+  react-vite-app:
+    build:
+      context: C:\Users\hp\IdeaProjects\Advanced\el-proyecte-grande-sprint-1-java-korodigergo\frontend
+      dockerfile: Dockerfile
+    container_name: react-vite-app
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+
+networks:
+    app-network:
+      driver: bridge
 
 volumes:
   postgres_data:

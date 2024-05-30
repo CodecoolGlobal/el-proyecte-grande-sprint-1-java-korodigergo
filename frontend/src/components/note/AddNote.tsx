@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+// @ts-ignore
 export default function AddNote({ reFetchNotes, userId }) {
   const [title, setTitle] = useState("");
   const [text, setText] = useState("");
