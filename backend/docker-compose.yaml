@@ -16,7 +16,7 @@ services:
       - app-network
 
   app:
-    image: 'notes-backend'
+    image: notes-backend:latest
     build:
       context: .
     container_name: app
@@ -34,11 +34,11 @@ services:
 
   react-vite-app:
     build:
-      context: C:\Users\hp\IdeaProjects\Advanced\el-proyecte-grande-sprint-1-java-korodigergo\frontend
+      context: ../frontend
       dockerfile: Dockerfile
     container_name: react-vite-app
     ports:
-      - "8080:8080"
+      - "80:80"
     networks:
       - app-network
 
