@@ -23,26 +23,22 @@ public class UserController {
   }
 //web security config fájl átírása, login, register endpointok permitAll a többi user role
   @PatchMapping("/edit/username/{userId}")
-  @PreAuthorize("hasRole('USER')")
   public UserNameDTO editUsername(@RequestBody UserNameDTO username, @PathVariable int userId) {
     return userService.editUsername(username, userId);
   }
 
   @PatchMapping("/edit/password/{userId}")
-  @PreAuthorize("hasRole('USER')")
   public boolean editUserPassword(@RequestBody UserPasswordDTO password, @PathVariable long userId) {
     return userService.editUserPassword(password, userId);
   }
 
   @PatchMapping("/subscribe/{userId}")
-  @PreAuthorize("hasRole('USER')")
   public boolean addPremiumToUser(@PathVariable long userId){
     return userService.addPremiumToUser(userId);
   }
 
 
   @DeleteMapping("/delete/{userId}")
-  @PreAuthorize("hasRole('USER')")
   public boolean delete(@PathVariable long userId) {
     return userService.deleteUser(userId);
   }
