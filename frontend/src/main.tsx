@@ -7,7 +7,7 @@ import App from "./App.js";
 import Settings from "./components/Settings.js";
 import NotePage from "./components/note/NotePage.js";
 import MainPage from "./components/main/MainPage.js";
-import ShoppingList from "./components/shoppingList/ShoppingList.js";
+import ShoppingList from "./components/shoppingList_/ShoppingList.js";
 
 
 const router = createBrowserRouter([
