@@ -1,6 +1,8 @@
-<a name="readme-top"></a>
+<a id="readme-top"></a>
 
-<h1>ReminderApp</h1>
+[![Contributors][contributors-shield]][contributors-url]
+
+<h3>DailyToDo-s</h3>
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -8,7 +10,6 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#contributors">Contributors</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -23,61 +24,82 @@
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
+
+
+
 <!-- ABOUT THE PROJECT -->
-About The Project
+## About The Project
 
-<h3>ReminderApp is a user-friendly application designed to help you manage your tasks and notes effectively. Whether you're planning a shopping trip or organizing your day, ReminderApp allows you to create and manage to-do lists with ease. Users can log in, add, update, set deadlines, and delete tasks seamlessly. Built with Spring Boot for the backend and secured using Spring Security, this project is containerized using Docker Compose to simplify deployment.</h3>
+<h3>
+  ReminderApp is a user-friendly application designed to help you manage your tasks and notes effectively. Whether you're planning a shopping trip or organizing your day, ReminderApp allows you to create and manage to-do lists with ease. Users can log in, add, update, set deadlines, and delete tasks seamlessly. Built the frontend with React.js, Spring Boot for the backend and secured using Spring Security. This project is containerized using Docker Compose to simplify deployment.
+</h3>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-Contributors
 
-Your Name
-<h3>Description coming soon...</h3>
+
+
+### Built With
+
+* [![React][React.js]][React-url]
+* [![SpringBoot][Springboot-shield]][Springboot-url]
+* [![PostgreSQL][POSTGRESQL-shield]][POSTGRESQL-url]
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-Built With
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
 <!-- GETTING STARTED -->
-Getting Started
+## Getting Started
 
-Prerequisites:
-<p>Install the latest NPM</p>
-<p>Ensure Docker and Docker Compose are installed on your machine</p>
-Installation
-Clone the repo
-sh
 
-git clone https://github.com/yourgithubusername/reminderapp.git
-Backend Setup:
-Create and configure the .env file with your database credentials and other environment variables.
-Build and run the containers using Docker Compose
-sh
+### Installation
+1. Clone the repo
+   ```sh
+   git clone https://github.com/CodecoolGlobal/el-proyecte-grande-sprint-1-java-korodigergo.git
+   ```
+2. Setup:
+   Navigate to the backend folder in your terminal and give your environmental variables(DB_USERNAME, DB_PASSWORD, SECRET_KEY, DB_URL)
+3. Run docker-compose up
 
-docker-compose up --build
-Access the application at http://localhost:8080.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
 <!-- USAGE EXAMPLES -->
-Usage
+## Usage
 
-Log In:
-Navigate to the login page.
-Enter your credentials.
-Add a New To-Do:
-Go to the "Add To-Do" page.
-Enter the task details, including a description and due date.
-Click "Add."
+Log In: 
+  Navigate to the login page. Enter your credentials. 
+Add a New To-Do: 
+  Go to the "Add To-Do" page. Enter the task details, including a description and due date. Click "Add." 
 Update a To-Do:
-Click on the to-do item you want to update.
-Edit the details and save changes.
-Delete a To-Do:
-Click on the to-do item you want to delete.
-Click the "Delete" button.
-Manage Your Tasks:
-Easily log in to add, update, and delete tasks, helping you stay organized.
+  Click on the to-do item you want to update. Edit the details and save changes. Delete a To-Do: Click on the "Delete" button on a to-do. 
+Manage Your Shopping List: Easily log in, navigate to shopping list and buy premium to add, update, and delete products, helping your next shopping trip.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
 <!-- CONTACT -->
-Contact
+## Contact
 
-Your Name - your.email@example.com
+Kóródi Gergő - [![LinkedIn - KorodiGergo][linkedin-shield]][linkedin-url_korodigergo] - k.geri131@gmail.com
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/korodigergo/el-proyecte-grande-sprint-1-java-korodigergo
+.svg?style=for-the-badge
+[contributors-url]: https://github.com/github_username/el-proyecte-grande-sprint-1-java-korodigergo
+/graphs/contributors
+
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url_korodigergo]: https://www.linkedin.com/in/korodi-gergo-235305271/
+
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[POSTGRESQL-shield]:https://img.shields.io/badge/postgresql-4169e1?style=for-the-badge&logo=postgresql&logoColor=white
+[POSTGRESQL-url]:https://www.postgresql.org/
+[Springboot-shield]:https://img.shields.io/badge/SpringBoot-6DB33F?style=flat-square&logo=Spring&logoColor=white
+[Springboot-url]:https://spring.io/projects/spring-boot
