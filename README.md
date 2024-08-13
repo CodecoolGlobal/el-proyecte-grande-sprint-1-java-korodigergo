@@ -89,10 +89,8 @@ Kóródi Gergő - [![LinkedIn - KorodiGergo][linkedin-shield]][linkedin-url_koro
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/korodigergo/el-proyecte-grande-sprint-1-java-korodigergo
-.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/el-proyecte-grande-sprint-1-java-korodigergo
-/graphs/contributors
+[contributors-shield]: https://img.shields.io/github/contributors/korodigergo/el-proyecte-grande-sprint-1-java-korodigergo.svg?style=for-the-badge
+[contributors-url]: https://github.com/CodecoolGlobal/el-proyecte-grande-sprint-1-java-korodigergo/graphs/contributors
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url_korodigergo]: https://www.linkedin.com/in/korodi-gergo-235305271/
