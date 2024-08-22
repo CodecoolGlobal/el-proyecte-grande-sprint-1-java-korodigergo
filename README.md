@@ -1,6 +1,6 @@
 <a id="readme-top"></a>
 
-[![Contributors][contributors-shield]][contributors-url]
+
 
 <h3>DailyToDo-s</h3>
 <!-- TABLE OF CONTENTS -->
@@ -35,7 +35,18 @@
 </h3>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Contributors
 
+- [Francisco KPodotay](https://github.com/francisco-kpodotay)
+  <h3>Description coming soon...</h3>
+- [Gergely Sabli](https://github.com/sabligeri)
+  <h3>Description coming soon...</h3>
+- [Gergo Korodi](https://github.com/korodigergo)
+  <h3>As a key contributor to this project, I was responsible for implementing the user-friendly login page, designing the intuitive menubar, and developing the shopping list page. My work focused on enhancing the user experience and ensuring seamless navigation across the application.</h3>
+- [Balint Varga](https://github.com/Kekalma)
+  <h3>Description coming soon...</h3>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
