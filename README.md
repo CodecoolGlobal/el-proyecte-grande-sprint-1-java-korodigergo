@@ -37,7 +37,7 @@
 ## Contributors
 
 - [Gergo Korodi](https://github.com/korodigergo)
-  <p>As a key contributor to this project, I was responsible for implementing the user-friendly login page, designing the intuitive menubar, and developing the shopping list page. My work focused on enhancing the user experience and ensuring seamless navigation across the application.</p>
+  <p>As a key contributor to this project, I was responsible for implementing the user-friendly login page, designing the menubar, and developing the shopping list page. My work focused on enhancing the user experience and ensuring seamless navigation across the application.</p>
 - [Francisco Kpodo-Tay](https://github.com/francisco-kpodotay)
   <p>The "Notes & Shopping List" project is the largest team project I completed at school. It allows users to manage notes and shopping lists efficiently. My contributions included designing the architecture and implementing algorithmic solutions, ensuring seamless integration. This project showcases my teamwork skills and ability to deliver a userfriendly product.</p>
 - [Gergely Sabli](https://github.com/sabligeri)
