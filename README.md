@@ -62,14 +62,44 @@
 ## Getting Started
 
 
-### Installation
-1. Clone the repo
+### Installation without Docker
+1. Clone the repository
+   ```sh
+   git clone https://github.com/CodecoolGlobal/el-proyecte-grande-sprint-1-java-korodigergo.git
+   ```
+2. Installations:
+   Install a version of JDK
+   
+   Install IDE
+   Install VSCode
+   Install Node.js
+   Install postgreSQL
+4. Environmental variables
+   Provide your environmental variables(DB_USERNAME, DB_PASSWORD, SECRET_KEY, DB_URL) in the application.properties file which is in the backend/src/main/resources folder. 
+5. Run frontend
+   In VSCode, navigate to the frontend folder and run:
+   ```sh
+   npm install
+   ```
+   Then run:
+   ```sh
+   npm run dev
+   ```
+   And now your frontend is running.
+5. Run backend
+   Open the backend folder in IDE and start the application.
+
+### Installation with Docker
+1. Clone the repository
    ```sh
    git clone https://github.com/CodecoolGlobal/el-proyecte-grande-sprint-1-java-korodigergo.git
    ```
 2. Setup:
    Navigate to the backend folder in your terminal and give your environmental variables(DB_USERNAME, DB_PASSWORD, SECRET_KEY, DB_URL)
-3. Run docker-compose up
+3. Run
+   ```sh
+   docker-compose up
+   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
